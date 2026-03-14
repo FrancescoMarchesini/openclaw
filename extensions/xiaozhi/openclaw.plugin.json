@@ -1,0 +1,38 @@
+{
+  "id": "xiaozhi",
+  "uiHints": {
+    "enabled": {
+      "label": "Enabled"
+    },
+    "secret": {
+      "label": "HMAC Secret",
+      "sensitive": true
+    },
+    "wsPath": {
+      "label": "WebSocket Path",
+      "advanced": true
+    },
+    "otaPath": {
+      "label": "OTA Endpoint Path",
+      "advanced": true
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": {
+        "type": "boolean"
+      },
+      "secret": {
+        "type": "string"
+      },
+      "wsPath": {
+        "type": "string"
+      },
+      "otaPath": {
+        "type": "string"
+      }
+    }
+  }
+}
